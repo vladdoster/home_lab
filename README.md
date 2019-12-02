@@ -3,7 +3,6 @@
 # homelab
 Collection of things I use for my homelab
 
-![Homelab](https://github.com/vladdoster/homelab/blob/master/IMG_20191201_201737.jpg)
-
+<img src="https://github.com/vladdoster/homelab/blob/master/IMG_20191201_201737.jpg" data-canonical-src="https://github.com/vladdoster/homelab/blob/master/IMG_20191201_201737.jpg" width="400" height="400" />
 
 </div>
