@@ -22,3 +22,6 @@ Collection of useful things for running a homelab
 #### Software stack
 - Kubernetes
 - Docker
+
+#### Monitoring
+- [Glances](https://nicolargo.github.io/glances/)
