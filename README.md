@@ -13,18 +13,29 @@ Collection of useful things for running a homelab
 - RPI 3b+ 16gb memory (each)
 - 1 rpi as a wireless node for room security camera
 
-### Software
+### Stack
+------------
+#### Monitoring
+- [Glances](https://nicolargo.github.io/glances/)
+
 #### Provisioning
 - [Ansible](https://github.com/ansible/ansible)
 - [Netplan](https://github.com/mrlesmithjr/ansible-netplan)
 
-#### Software stack
+#### Containers
 - Kubernetes
 - Docker
 
 ### Commands
+------------
+### Commands
+
+#### Export useful commands
+```
+source useful_commands.sh
+```
+
 #### Run a playbook
 ```
 ansible-playbook ansible/playbooks/<playbook.yml> -i hosts
 ```
-
