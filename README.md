@@ -14,5 +14,10 @@ Collection of things I use for my homelab
 - 1 rpi as a wireless node for room security camera
 
 ### Software
+#### Provisioning
+- Ansible 
+- Netplan
+
+#### Software stack
 - Kubernetes
 - Docker
