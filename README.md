@@ -16,3 +16,10 @@ Collection of things I use for my homelab
 ### Software
 - Kubernetes
 - Docker
+
+### Commands
+#### Run a playbook
+```
+ansible-playbook ansible/playbooks/<playbook.yml> -i hosts
+```
+
