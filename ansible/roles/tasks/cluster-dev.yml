@@ -1,0 +1,11 @@
+---
+- name: install prerequisite software for homelab development
+  apt:
+    name="{{ item }}"
+    state=present
+    update_cache=yes
+  with_items:
+    - zlib1g-dev
+    - autoconf
+  tags:
+    - sw
