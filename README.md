@@ -1,4 +1,4 @@
-<div align="center">
+<iv align="center">
 
 # Homelab
 Collection of useful things for running a homelab
@@ -14,7 +14,6 @@ Collection of useful things for running a homelab
 - 1 rpi as a wireless node for room security camera
 
 ### Software
-------------
 #### Provisioning
 - [Ansible](https://github.com/ansible/ansible)
 - [Netplan](https://github.com/mrlesmithjr/ansible-netplan)
