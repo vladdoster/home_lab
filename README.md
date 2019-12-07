@@ -3,7 +3,7 @@
 # homelab
 Collection of things I use for my homelab
 
-<img src="https://github.com/vladdoster/homelab/blob/master/cluster.jpg" data-canonical-src="https://github.com/vladdoster/homelab/blob/master/cluster.jpg" width="300" height="350" />
+<img src="https://github.com/vladdoster/homelab/blob/master/assets/cluster.jpg" data-canonical-src="https://github.com/vladdoster/homelab/blob/master/assets/cluster.jpg" width="300" height="350" />
 
 </div>
 
