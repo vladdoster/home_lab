@@ -1,18 +1,5 @@
 #!/usr/bin/zsh
 
-#---------------------------------------
-# Give Ansible a password to work with |
-#---------------------------------------
-# Bash
-# read -p "What is the cluster password? [raspberry]: " cluster_password
-# Zsh
-read "?What is the cluster password? [raspberry]: " cluster_password # Default password is raspberry
-cluster_password=${cluster_password:-raspberry}
-export CLUSTER_PASSWORD=$cluster_password
-
-#------------------
-# Useful commands |
-#------------------
 export HOMELAB_DIR="~/github/homelab/ansible"
 
 # Ping
