@@ -32,7 +32,7 @@ Collection of useful things for running a homelab
 . ./useful_commands.sh
 ```
 
-#### Run a playbook
+#### Run a playbook [Use alias commands above instead]
 ```
 ansible-playbook ansible/playbooks/<playbook.yml> -i hosts
 ```
