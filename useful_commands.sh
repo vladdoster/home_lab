@@ -1,11 +1,15 @@
-#!/usr/bin/env sh
+#!/usr/bin/zsh
 
 #---------------------------------------
 # Give Ansible a password to work with |
-#--------------------------------------- 
-read -p ""What is cluster password? [raspberry]": " cluster_password
+#---------------------------------------
+# Bash
+# read -p "What is the cluster password? [raspberry]: " cluster_password
+# Zsh
+read "?What is the cluster password? [raspberry]: " cluster_password
 cluster_password=${cluster_password:-raspberry}
-export CLUSTER_PASSWORD="$cluster_password"
+echo $cluster_password
+export CLUSTER_PASSWORD=$cluster_password
 
 #------------------
 # Useful commands |
