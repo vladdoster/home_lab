@@ -8,7 +8,6 @@
 # Zsh
 read "?What is the cluster password? [raspberry]: " cluster_password
 cluster_password=${cluster_password:-raspberry}
-echo $cluster_password
 export CLUSTER_PASSWORD=$cluster_password
 
 #------------------
@@ -16,14 +15,17 @@ export CLUSTER_PASSWORD=$cluster_password
 #------------------
 export HOMELAB_DIR="~/github/homelab/ansible"
 
-# Reboot command
+# Ping
+alias ping_cluster="ansible pi_cluster -m ping"
+
+# Reboot
 alias restart_cluster="ansible-playbook $HOMELAB_DIR/playbooks/reboot.yml -i $HOMELAB_DIR/hosts"
 
-# Shutdown command
+# Shutdown
 alias poweroff_cluster="ansible-playbook $HOMELAB_DIR/playbooks/shutdown.yml -i $HOMELAB_DIR/hosts"
 
-# Upgrade command
+# Upgrade
 alias upgrade_cluster="ansible-playbook $HOMELAB_DIR/playbooks/upgrade.yml -i $HOMELAB_DIR/hosts"
 
-# Signal script is done
+# Signal script success
 echo "RPI cluster commands now available!"
