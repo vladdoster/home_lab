@@ -2,9 +2,9 @@
 
 #---------------------------------------
 # Give Ansible a password to work with |
-#---------------------------------------
-echo "What is cluster password?"
-read cluster_password
+#--------------------------------------- 
+read -p ""What is cluster password? [raspberry]": " cluster_password
+cluster_password=${cluster_password:-raspberry}
 export CLUSTER_PASSWORD="$cluster_password"
 
 #------------------
