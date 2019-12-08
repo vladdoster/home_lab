@@ -1,6 +1,7 @@
 [all:vars]
+ansible_connection=ssh
 ansible_user=pi
-ansible_ssh_pass=$CLUSTER_PASSWORD
+ansible_ssh_pass={{ lookup('env','CLUSTER_PASSWORD') }}
 
 [picluster]
 slave3.local
