@@ -1,6 +1,6 @@
 [all:vars]
 ansible_user=pi
-ansible_ssh_pass=$RPI_CLUSTER_PASSWORD
+ansible_ssh_pass=$CLUSTER_PASSWORD
 
 [picluster]
 192.168.1.20
