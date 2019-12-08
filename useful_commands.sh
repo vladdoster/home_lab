@@ -3,9 +3,9 @@
 #---------------------------------------
 # Give Ansible a password to work with |
 #---------------------------------------
-echo "What is RPI cluster password?"
-read $cluster_password
-export CLUSTER_PASSWORD=$cluster_password
+echo "What is cluster password?"
+read cluster_password
+export CLUSTER_PASSWORD="$cluster_password"
 
 #------------------
 # Useful commands |
