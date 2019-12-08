@@ -1,5 +1,8 @@
 #!/usr/bin/zsh
 
+# Yes, I realize these commands can be condensed into a for loop but just want to wait to finish
+# this project before I start optimizing scripts :)
+
 export HOMELAB_DIR="~/github/homelab/ansible"
 
 # Ping
@@ -7,6 +10,9 @@ alias ping_cluster="ansible-playbook $HOMELAB_DIR/playbooks/ping.yml -i $HOMELAB
 
 # Reboot
 alias restart_cluster="ansible-playbook $HOMELAB_DIR/playbooks/reboot.yml -i $HOMELAB_DIR/hosts"
+
+# Setup cluster [assuming they are rpi at the moment]
+alias setup_cluster="ansible-playbook $HOMELAB_DIR/playbooks/reboot.yml -i $HOMELAB_DIR/hosts"
 
 # Shutdown
 alias poweroff_cluster="ansible-playbook $HOMELAB_DIR/playbooks/shutdown.yml -i $HOMELAB_DIR/hosts"
