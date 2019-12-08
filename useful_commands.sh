@@ -16,7 +16,7 @@ export CLUSTER_PASSWORD=$cluster_password
 export HOMELAB_DIR="~/github/homelab/ansible"
 
 # Ping
-alias ping_cluster="ansible pi_cluster -m ping"
+alias ping_cluster="ansible-playbook $HOMELAB_DIR/playbooks/ping.yml -i $HOMELAB_DIR/hosts"
 
 # Reboot
 alias restart_cluster="ansible-playbook $HOMELAB_DIR/playbooks/reboot.yml -i $HOMELAB_DIR/hosts"
