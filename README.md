@@ -36,3 +36,12 @@ Collection of useful things for running a homelab
 ```
 ansible-playbook ansible/playbooks/<playbook.yml> -i hosts
 ```
+
+## Zero to Hero guide
+1.
+  1. Flash individual SD cards with [Rufus]()
+  2. Run [enable_ssh.ps1]() after flashing to enable SSH
+2.
+  1. Turn on cluster with newly flashed SD cards
+  2. Run `. ./useful_alias_commands`
+  3. Run `ping_cluster` and should receive all oks.
