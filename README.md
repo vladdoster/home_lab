@@ -27,6 +27,11 @@ Collection of useful things for running a homelab
 - Docker (Swarm)
 
 ### Commands
+#### Get useful alias commands
+```
+. ./useful_commands.sh
+```
+
 #### Run a playbook
 ```
 ansible-playbook ansible/playbooks/<playbook.yml> -i hosts
