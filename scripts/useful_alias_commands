@@ -12,7 +12,7 @@ alias ping_cluster="ansible-playbook $HOMELAB_DIR/playbooks/ping.yml -i $HOMELAB
 alias restart_cluster="ansible-playbook $HOMELAB_DIR/playbooks/reboot.yml -i $HOMELAB_DIR/hosts"
 
 # Setup cluster [assuming they are rpi at the moment]
-alias setup_cluster="ansible-playbook $HOMELAB_DIR/playbooks/reboot.yml -i $HOMELAB_DIR/hosts"
+alias setup_cluster="ansible-playbook $HOMELAB_DIR/playbooks/setup.yml -i $HOMELAB_DIR/hosts"
 
 # Shutdown
 alias poweroff_cluster="ansible-playbook $HOMELAB_DIR/playbooks/shutdown.yml -i $HOMELAB_DIR/hosts"
