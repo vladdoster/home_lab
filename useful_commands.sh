@@ -6,7 +6,7 @@
 # Bash
 # read -p "What is the cluster password? [raspberry]: " cluster_password
 # Zsh
-read "?What is the cluster password? [raspberry]: " cluster_password
+read "?What is the cluster password? [raspberry]: " cluster_password # Default password is raspberry
 cluster_password=${cluster_password:-raspberry}
 export CLUSTER_PASSWORD=$cluster_password
 
@@ -28,4 +28,4 @@ alias poweroff_cluster="ansible-playbook $HOMELAB_DIR/playbooks/shutdown.yml -i 
 alias upgrade_cluster="ansible-playbook $HOMELAB_DIR/playbooks/upgrade.yml -i $HOMELAB_DIR/hosts"
 
 # Signal script success
-echo "RPI cluster commands now available!"
+echo "Cluster commands now available!"
