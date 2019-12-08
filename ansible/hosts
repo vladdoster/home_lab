@@ -3,6 +3,7 @@ ansible_user=pi
 ansible_ssh_pass=$CLUSTER_PASSWORD
 
 [picluster]
+slave3
 192.168.1.20
 192.168.1.193
 192.168.1.194
