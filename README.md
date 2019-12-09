@@ -12,7 +12,7 @@ Collection of useful things for running a homelab
 - [Picocluster 5 rpi kit](https://www.picocluster.com/products/pico-5-raspberry-pi)
 - RPI 3b+ 16gb memory (each)
 - 1 rpi as a wireless node for room security camera
-- Intel Nuc 8th gen i5 (64 gb ram, 2TB HD)
+- Intel Nuc (8th gen i5, 64 gb ram, 2TB HD)
 - Unifi 
    1. USG
    2. 16 port PoE  switch
