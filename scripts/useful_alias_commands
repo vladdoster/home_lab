@@ -1,8 +1,5 @@
 #!/usr/bin/zsh
 
-# Yes, I realize these commands can be condensed into a for loop but just want to wait to finish
-# this project before I start optimizing scripts :)
-
 export HOMELAB_DIR="~/github/homelab/ansible"
 
 # Ping
