@@ -12,6 +12,10 @@ Collection of useful things for running a homelab
 - [Picocluster 5 rpi kit](https://www.picocluster.com/products/pico-5-raspberry-pi)
 - RPI 3b+ 16gb memory (each)
 - 1 rpi as a wireless node for room security camera
+- Unifi USG
+- Unifi 16 port PoE  switch
+- Unifi 2nd gen cloud key
+- Unifi Max AP
 
 ### Stack
 ------------
