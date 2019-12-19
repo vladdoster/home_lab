@@ -1,7 +1,7 @@
 <div align="center">
 
-# Homelab
-Collection of useful things for running a homelab
+# Homelab [constant WIP]
+Collection of scripts/configs for running a homelab
 
 <img src="https://github.com/vladdoster/homelab/blob/master/assets/cluster.jpg" data-canonical-src="https://github.com/vladdoster/homelab/blob/master/assets/cluster.jpg" width="300" height="350" />
 
