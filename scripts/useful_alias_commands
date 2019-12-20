@@ -1,22 +1,32 @@
 #!/usr/bin/zsh
 
-export HOMELAB_DIR="~/github/homelab/ansible"
-export PLAYBOOK_DIR="~/github/homelab/ansible/playbooks"
+## New way, lot more flexible
 
+homelab_dir=$(find ~/github -name homelab) ||  { echo 'No homelab found :(' ; exit 1; }
+playbook_dir=$(find $homelab_dir -name playbooks)
+
+for file in $playbook_dir/*; do
+	playbook_name=${$(basename -- $file)%.*}
+	echo "Adding ${playbook_name}_cluster command"
+	alias "${playbook_name}_cluster"=ansible-playbook $file -i "${homelab_dir}/ansible/hosts"
+done
+
+## Old way of doing things, lots of manual updating required for new playbooks which
+## is annoying
 # Ping
-alias ping_cluster="ansible-playbook $PLAYBOOK_DIR/ping.yml -i $HOMELAB_DIR/hosts"
+#alias ping_cluster="ansible-playbook $PLAYBOOK_DIR/ping.yml -i $HOMELAB_DIR/hosts"
 
 # Reboot
-alias restart_cluster="ansible-playbook $PLAYBOOK_DIR/reboot.yml -i $HOMELAB_DIR/hosts"
+#alias restart_cluster="ansible-playbook $PLAYBOOK_DIR/reboot.yml -i $HOMELAB_DIR/hosts"
 
 # Setup cluster [assuming they are rpi at the moment]
-alias setup_cluster="ansible-playbook $PLAYBOOK_DIR/setup.yml -i $HOMELAB_DIR/hosts"
+#alias setup_cluster="ansible-playbook $PLAYBOOK_DIR/setup.yml -i $HOMELAB_DIR/hosts"
 
 # Shutdown
-alias poweroff_cluster="ansible-playbook $PLAYBOOK_DIR/shutdown.yml -i $HOMELAB_DIR/hosts"
+#alias poweroff_cluster="ansible-playbook $PLAYBOOK_DIR/shutdown.yml -i $HOMELAB_DIR/hosts"
 
 # Upgrade
-alias upgrade_cluster="ansible-playbook $PLAYBOOK_DIR/upgrade.yml -i $HOMELAB_DIR/hosts"
+#alias upgrade_cluster="ansible-playbook $PLAYBOOK_DIR/upgrade.yml -i $HOMELAB_DIR/hosts"
 
 # Signal script success
 echo "Cluster commands now available!"
