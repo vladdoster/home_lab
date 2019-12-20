@@ -10,7 +10,7 @@ for file in $playbook_dir/*; do
 	echo "Adding ${playbook_name}_cluster command"
 	alias "${playbook_name}_cluster"="ansible-playbook $file -i "${homelab_dir}/ansible/hosts""
 done
-# Signal script success
+
 echo "Cluster commands now available!"
 
 ## Old way of doing things, lots of manual updating required for new playbooks which was annoying
