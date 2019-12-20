@@ -10,22 +10,17 @@ for file in $playbook_dir/*; do
 	echo "Adding ${playbook_name}_cluster command"
 	alias "${playbook_name}_cluster"="ansible-playbook $file -i "${homelab_dir}/ansible/hosts""
 done
+# Signal script success
+echo "Cluster commands now available!"
 
 ## Old way of doing things, lots of manual updating required for new playbooks which was annoying
 # Ping
 #alias ping_cluster="ansible-playbook $PLAYBOOK_DIR/ping.yml -i $HOMELAB_DIR/hosts"
-
 # Reboot
 #alias restart_cluster="ansible-playbook $PLAYBOOK_DIR/reboot.yml -i $HOMELAB_DIR/hosts"
-
 # Setup cluster [assuming they are rpi at the moment]
 #alias setup_cluster="ansible-playbook $PLAYBOOK_DIR/setup.yml -i $HOMELAB_DIR/hosts"
-
 # Shutdown
 #alias poweroff_cluster="ansible-playbook $PLAYBOOK_DIR/shutdown.yml -i $HOMELAB_DIR/hosts"
-
 # Upgrade
 #alias upgrade_cluster="ansible-playbook $PLAYBOOK_DIR/upgrade.yml -i $HOMELAB_DIR/hosts"
-
-# Signal script success
-echo "Cluster commands now available!"
