@@ -11,8 +11,7 @@ for file in $playbook_dir/*; do
 	alias "${playbook_name}_cluster"=ansible-playbook $file -i "${homelab_dir}/ansible/hosts"
 done
 
-## Old way of doing things, lots of manual updating required for new playbooks which
-## is annoying
+## Old way of doing things, lots of manual updating required for new playbooks which was annoying
 # Ping
 #alias ping_cluster="ansible-playbook $PLAYBOOK_DIR/ping.yml -i $HOMELAB_DIR/hosts"
 
