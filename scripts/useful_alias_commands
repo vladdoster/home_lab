@@ -8,7 +8,7 @@ playbook_dir=$(find $homelab_dir -name playbooks)
 for file in $playbook_dir/*; do
 	playbook_name=${$(basename -- $file)%.*}
 	echo "Adding ${playbook_name}_cluster command"
-	alias "${playbook_name}_cluster"=ansible-playbook $file -i "${homelab_dir}/ansible/hosts"
+	alias "${playbook_name}_cluster"=ansible-playbook ${file} -i "${homelab_dir}/ansible/hosts"
 done
 
 ## Old way of doing things, lots of manual updating required for new playbooks which was annoying
