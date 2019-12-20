@@ -1,7 +1,5 @@
 #!/usr/bin/zsh
 
-## New way, lot more flexible
-
 homelab_dir=$(find ~/github -name homelab) ||  { echo 'No homelab found :(' ; exit 1; }
 playbook_dir=$(find $homelab_dir -name playbooks)
 
@@ -12,15 +10,3 @@ for file in $playbook_dir/*; do
 done
 
 echo "Cluster commands now available!"
-
-## Old way of doing things, lots of manual updating required for new playbooks which was annoying
-# Ping
-#alias ping_cluster="ansible-playbook $PLAYBOOK_DIR/ping.yml -i $HOMELAB_DIR/hosts"
-# Reboot
-#alias restart_cluster="ansible-playbook $PLAYBOOK_DIR/reboot.yml -i $HOMELAB_DIR/hosts"
-# Setup cluster [assuming they are rpi at the moment]
-#alias setup_cluster="ansible-playbook $PLAYBOOK_DIR/setup.yml -i $HOMELAB_DIR/hosts"
-# Shutdown
-#alias poweroff_cluster="ansible-playbook $PLAYBOOK_DIR/shutdown.yml -i $HOMELAB_DIR/hosts"
-# Upgrade
-#alias upgrade_cluster="ansible-playbook $PLAYBOOK_DIR/upgrade.yml -i $HOMELAB_DIR/hosts"
