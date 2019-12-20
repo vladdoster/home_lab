@@ -19,7 +19,7 @@ Collection of scripts/configs for running a homelab
    3. 2nd gen cloud key
    4. Max AP
 
-### Stack
+### Software stack
 ------------
 #### Monitoring
 - [Glances](https://nicolargo.github.io/glances/)
