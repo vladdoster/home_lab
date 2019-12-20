@@ -1,6 +1,6 @@
 <div align="center">
 
-# Homelab [constant WIP]
+# Homelab [WIP]
 Collection of scripts/configs for running a homelab
 
 <img src="https://github.com/vladdoster/homelab/blob/master/assets/cluster.jpg" data-canonical-src="https://github.com/vladdoster/homelab/blob/master/assets/cluster.jpg" width="300" height="350" />
